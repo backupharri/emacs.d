@@ -1,6 +1,7 @@
 (defconst my-emacs-path "~/.emacs.d/")
 
 (defconst my-lisps-path  (concat my-emacs-path "ours/") "Path for self lisps")
+(defconst their-lisps-path  (concat my-emacs-path "theirs/") "Path for self lisps")
 (add-to-list 'load-path my-lisps-path) 
 
 (require 'basic-setting)
