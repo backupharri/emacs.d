@@ -11,3 +11,5 @@
 (require 'font-setting)
 (require 'shell-setting)
 (require 'modeline-setting)
+
+(require 'colortheme-setting)
