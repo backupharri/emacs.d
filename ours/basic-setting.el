@@ -78,3 +78,14 @@
 	try-expand-whole-kill
 	)
       )
+
+;;Custom setting saved file location
+(setq abbrev-file-name
+      (concat
+       my-lisps-path
+      ".abbrev_defs"))
+
+(setq custom-file
+      (concat
+       my-lisps-path
+      ".emacs_custom.el"))
