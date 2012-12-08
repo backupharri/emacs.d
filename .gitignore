@@ -1,0 +1,25 @@
+# Temp Files
+*~
+\#*
+.\#*
+*.swp
+
+# Record Files
+.recentf
+.session
+.w3m
+tramp
+eshell
+
+# Private Files
+.ssh
+.abbrev_defs
+.emacs_custom.el
+
+# Binary Files
+*.elc
+*.db
+
+# Other Files
+.emacs
+.emacs.d
