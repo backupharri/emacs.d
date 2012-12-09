@@ -14,8 +14,12 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (setq ibuffer-saved-filter-groups
       (quote (("default"
-               ("shell"  (mode . shell-mode))
-               ("python" (mode . python-mode))
+               ("shell"  (or
+			  (mode . shell-mode)
+			  (mode . eshell-mode)))
+               ("python" (or
+			  (name . "^\\*Py")
+			  (mode . python-mode)))
                ("ruby"   (mode . ruby-mode))
                ("html"   (mode . html-mode))
 	       ("cc-c"   (or
@@ -24,10 +28,11 @@
                ("java"   (mode . java-mode))
                ("org"    (mode . org-mode))
 	       ("emacs"  (or
+			  (mode . emacs-lisp-mode)
 			  (name . "^\\.emacs$")
 			  (name . "^\\*scratch\\*$")))
                ("dired"  (mode . dired-mode))
-               ("xml"    (mode . nxml-mode))))))    
+               ("xml"    (mode . nxml-mode))))))   
 
 (setq ibuffer-show-empty-filter-groups nil)
 

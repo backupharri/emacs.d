@@ -1,0 +1,7 @@
+#name: function(args) { ... }
+#group: javascript
+# --
+function${1: name}(${2:args})
+{
+  $0
+}

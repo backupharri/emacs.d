@@ -35,7 +35,7 @@
   (defconst my-python-path
     (concat
      my-kp-path
-     "python26/"))
+     "python27/"))
   
   (defconst my-python-script-path
     (concat
