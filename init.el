@@ -14,3 +14,5 @@
 (require 'modeline-setting)
 
 (require 'colortheme-setting)
+(require 'python-setting)
+
