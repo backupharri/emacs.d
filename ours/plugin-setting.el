@@ -6,8 +6,8 @@
 (setq password-cache-expiry 6000)
 
 ;;--------recentf------------------>>
-(recentf-mode 1)
- (setq recentf-max-menu-items 30)
+;; (recentf-mode 1)
+;;  (setq recentf-max-menu-items 30)
 
 ;;--------ibuffer------------------>>
 (require 'ibuffer)
