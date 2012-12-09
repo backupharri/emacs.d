@@ -37,6 +37,8 @@
       scroll-margin 0
       scroll-conservatively 10000)
 
+(setq comment-empty-lines t)
+
 ;;Maximum Windows
 (run-with-idle-timer 1 nil 'w32-send-sys-command 61488)
 
