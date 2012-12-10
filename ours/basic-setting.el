@@ -37,6 +37,8 @@
       scroll-margin 0
       scroll-conservatively 10000)
 
+(setq comment-empty-lines t)
+
 ;;Maximum Windows
 (run-with-idle-timer 1 nil 'w32-send-sys-command 61488)
 
@@ -78,3 +80,24 @@
 	try-expand-whole-kill
 	)
       )
+
+;;Custom setting saved file location
+(setq abbrev-file-name
+      (concat
+       my-lisps-path
+      ".abbrev_defs"))
+
+(setq custom-file
+      (concat
+       my-lisps-path
+      ".emacs_custom.el"))
+
+;;auto compile elc file when saved
+(add-hook 'after-save-hook
+          (lambda ()
+            (if (eq major-mode 'emacs-lisp-mode)
+                (save-excursion (byte-compile-file buffer-file-name)))))
+
+;;faster compile & accurate warning.
+(setq byte-compile-verbose nil)
+(setq font-lock-verbose t)
