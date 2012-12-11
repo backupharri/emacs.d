@@ -22,6 +22,11 @@
       (defconst my-dropbox-path "c:/Dropbox/Development/")
     (defconst my-dropbox-path "d:/Dropbox/Development/"))
   
+  (defconst my-tools-path
+    (concat
+     my-dropbox-path
+     "Tools/"))
+
   (defconst my-java-path
     (concat
      my-dropbox-path
@@ -32,6 +37,11 @@
      my-dropbox-path
      "PortableMingw/bin/"))  
   
+  (defconst my-git-path
+    (concat
+     my-dropbox-path
+     "PortableGit/bin/"))
+
   (defconst my-python-path
     (concat
      my-dropbox-path
@@ -42,18 +52,14 @@
      my-python-path
      "Scripts"))
   
-  (defconst my-git-path
-    (concat
-     my-dropbox-path
-     "PortableGit/bin/"))
-
   (setenv "PATH"
 	  (concat
+	   my-tools-path ";"
+	   my-java-path ";"
+	   my-mingw-path ";"
 	   my-git-path ";"
 	   my-python-path ";"
 	   my-python-script-path ";"
-	   my-mingw-path ";"
-	   my-java-path ";"
 	   (getenv "PATH")
 	   ))
   )

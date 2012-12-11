@@ -5,6 +5,13 @@
 ;; tramp setting password keep time
 (setq password-cache-expiry 6000)
 
+(if (string-equal system-type "windows-nt")
+    (setq tramp-default-method "plink")
+  (setq tramp-default-method "ssh"))
+
+;;use sudo on remote host
+(set-default 'tramp-default-proxies-alist (quote ((nil "\\`root\\'" "/hfeng@%h:"))))
+
 ;;--------recentf------------------>>
 (recentf-mode 1)
  (setq recentf-max-menu-items 30)
