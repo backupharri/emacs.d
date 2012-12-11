@@ -67,3 +67,18 @@
 	    (setq yas/trigger-key [tab])
 	    (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
 	    (define-key yas/keymap [tab] 'yas/next-field)))
+
+;;--------info-mode------------------>>
+(defun info-mode ()
+  (interactive)
+  (let ((file-name (buffer-file-name)))
+    (kill-buffer (current-buffer))
+    (info file-name)))
+(add-to-list 'auto-mode-alist '("\\.info\\'" . info-mode))
+
+(require 'info-look)
+
+(info-lookup-add-help
+ :mode 'python-mode
+ :regexp "[[:alnum:]_]+"
+ :doc-spec '(("(python)Index" nil "")))
