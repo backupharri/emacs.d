@@ -13,8 +13,8 @@
 (set-default 'tramp-default-proxies-alist (quote ((nil "\\`root\\'" "/hfeng@%h:"))))
 
 ;;--------recentf------------------>>
-;; (recentf-mode 1)
-;;  (setq recentf-max-menu-items 30)
+(recentf-mode 1)
+ (setq recentf-max-menu-items 30)
 
 ;;--------ibuffer------------------>>
 (require 'ibuffer)
