@@ -5,12 +5,15 @@
 ;; tramp setting password keep time
 (setq password-cache-expiry 6000)
 
+;; usage is like this /sudo:root@host, then select the user name
 (if (string-equal system-type "windows-nt")
-    (setq tramp-default-method "plink")
-  (setq tramp-default-method "ssh"))
+    (add-to-list 'tramp-default-proxies-alist
+		 '(nil "\\`root\\'" "/plink:%h:"))
+  (add-to-list 'tramp-default-proxies-alist
+	       '(nil "\\`root\\'" "/ssh:%h:")))
 
-;;use sudo on remote host
-(set-default 'tramp-default-proxies-alist (quote ((nil "\\`root\\'" "/hfeng@%h:"))))
+(add-to-list 'tramp-default-proxies-alist
+	     '((regexp-quote (system-name)) nil nil))
 
 ;;--------recentf------------------>>
 (recentf-mode 1)
