@@ -41,5 +41,5 @@
 ;; (global-set-key "\M-o" cm-map)
 
 (add-hook 'outline-minor-mode-hook
-              (lambda () (local-set-key "\C-c\C-c"
+              (lambda () (local-set-key "\C-x\C-x"
                                         cm-map)))
