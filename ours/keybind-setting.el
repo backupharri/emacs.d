@@ -21,13 +21,12 @@
 (define-prefix-command 'cm-map nil "Outline-")
 ; HIDE
 (define-key cm-map "a" 'hide-sublevels)    ; Hide everything but the top-level headings
-(define-key cm-map "e" 'hide-subtree)      ; Hide everything in this entry and sub-entries
-
-(define-key cm-map "h" 'show-all)          ; Show (expand) everything
+(define-key cm-map "e" 'show-all)          ; Show (expand) everything
+(define-key cm-map "h" 'hide-subtree)      ; Hide everything in this entry and sub-entries
 (define-key cm-map "s" 'show-subtree)      ; Show (expand) everything in this heading & below
 
-(define-key cm-map "i" 'show-children)     ; Show this heading's immediate child sub-headings
 (define-key cm-map "l" 'hide-leaves)       ; Hide body lines in this entry and sub-entries
+(define-key cm-map "i" 'show-children)     ; Show this heading's immediate child sub-headings
 
 ;; (define-key cm-map "t" 'hide-body)         ; Hide everything but headings (all body lines)
 ;; (define-key cm-map "o" 'hide-other)        ; Hide other branches
