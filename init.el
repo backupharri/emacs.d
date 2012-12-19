@@ -16,3 +16,4 @@
 (require 'colortheme-setting)
 (require 'python-setting)
 (require 'snippet-setting)
+(require 'simpleplugin-setting)

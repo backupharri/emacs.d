@@ -78,6 +78,23 @@
 	    (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
 	    (define-key yas/keymap [tab] 'yas/next-field)))
 
+(setq org-export-html-style
+      "<style type=\"text/css\"> html { font-family: Consolas; font-size: 12pt;} \
+pre{background-color:#002B36;Font:12pt Consolas, Courier New;color:wheat;}</style>")
+       
+(setq org-publish-project-alist
+      (list
+       '("htmlfiles"
+	 :base-extension "org"
+	 :publishing-function org-publish-org-to-html
+	 :headline-levels 3
+	 :with-section-numbers nil
+	 :table-of-contents nil
+	 :auto-preamble t
+	 :htmlized-source t
+	 :auto-postamble nil)
+       ))
+
 ;;--------info-mode------------------>>
 (defun info-mode ()
   (interactive)
