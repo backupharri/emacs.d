@@ -7,5 +7,11 @@
 (yas/load-directory (concat their-lisps-path
 			    "yasnippet/snippets/"))
 
-(setq mmm-global-mode 't)
-(setq yas/prompt-functions '(yas/dropdown-prompt yas/x-prompt))
+;;Right configuration for snippet show without mouse control
+(require 'dropdown-list)
+(setq yas/prompt-functions
+      '(yas/dropdown-prompt
+        yas/ido-prompt
+        yas/x-prompt
+        yas/completing-prompt
+        yas/no-prompt))
