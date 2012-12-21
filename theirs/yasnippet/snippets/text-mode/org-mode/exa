@@ -1,0 +1,5 @@
+# name: begin_example ... end_example
+# key: exa
+# --
+#+begin_example $0
+#+end_example

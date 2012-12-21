@@ -12,10 +12,14 @@
 (global-set-key (kbd "C-h")          'backward-delete-char-untabify)
 (global-set-key (kbd "C-,")          'set-mark-command) 
 (global-set-key (kbd "<f4>")         'loop-alpha)
-(global-set-key (kbd "<f5>")         'ns-toggle-fullscreen)
+(global-set-key (kbd "<f5>")         'revert-buffer)
 (global-set-key (kbd "<C-return>")   'delete-other-windows)
 (global-set-key (kbd "<C-f11>")      'toggle-tool-bar-mode-from-frame)
 (global-set-key [(meta ?/)]          'hippie-expand)
+
+;;mac only
+(global-set-key (kbd "<f8>")         'ns-toggle-fullscreen)
+
 
 ; Outline-minor-mode key map
 (define-prefix-command 'cm-map nil "Outline-")
