@@ -17,3 +17,4 @@
 (require 'python-setting)
 (require 'snippet-setting)
 (require 'simpleplugin-setting)
+(require 'cc-setting)
