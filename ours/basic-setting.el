@@ -101,3 +101,6 @@
 ;;faster compile & accurate warning.
 (setq byte-compile-verbose nil)
 (setq font-lock-verbose t)
+
+
+(add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-mode))
