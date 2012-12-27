@@ -3,6 +3,9 @@
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")
 
+;; use spaces only!
+(setq-default indent-tabs-mode nil)
+
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
 
@@ -104,3 +107,4 @@
 
 
 (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-mode))
+
