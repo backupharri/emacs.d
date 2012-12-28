@@ -8,7 +8,7 @@
 			((string-match system-name "hfeng-pc")
 			 ":pixelsize=20")
 			((string-match system-name "sh-rd-hfeng")
-			 ":pixelsize=16")
+			 ":pixelsize=14")
 			(":pixelsize=16")))
 
 (qiang-set-font
