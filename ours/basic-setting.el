@@ -3,6 +3,9 @@
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")
 
+;; use spaces only!
+(setq-default indent-tabs-mode nil)
+
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
 
@@ -48,18 +51,18 @@
       mac-command-modifier 'meta
       mac-option-modifier 'none)
 
-;;UTF-8 Setting
-(set-language-environment 'Chinese-GB)
-(setq-default pathname-coding-system 'euc-cn)
-(setq file-name-coding-system 'euc-cn)
-
+;; ;;UTF-8 Setting
+;; (set-language-environment 'English)
+;; (setq-default pathname-coding-system 'euc-cn)
+;; (setq file-name-coding-system 'euc-cn)
+;; 
 ;;Encoding setting
-(prefer-coding-system 'cp950)
-(prefer-coding-system 'gb2312)
-(prefer-coding-system 'cp936)
-(prefer-coding-system 'gb18030)
-(prefer-coding-system 'utf-16)
-(prefer-coding-system 'utf-8)
+;; (prefer-coding-system 'cp950)
+;; (prefer-coding-system 'gb2312)
+;; (prefer-coding-system 'cp936)
+;; (prefer-coding-system 'gb18030)
+;; (prefer-coding-system 'utf-16)
+;; (prefer-coding-system 'utf-8)
 
 ;;auto expand
 (setq hippie-expand-try-functions-list
@@ -101,3 +104,7 @@
 ;;faster compile & accurate warning.
 (setq byte-compile-verbose nil)
 (setq font-lock-verbose t)
+
+
+(add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-mode))
+

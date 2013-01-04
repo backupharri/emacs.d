@@ -30,8 +30,13 @@
   (defconst my-java-path
     (concat
      my-dropbox-path
-     "PortableJava/bin/"))
+     "PortableJdk/bin/"))
 
+  (defconst my-ant-path
+    (concat
+     my-dropbox-path
+     "PortableAnt/bin/"))
+  
   (defconst my-mingw-path
     (concat
      my-dropbox-path
@@ -54,6 +59,7 @@
 	  (concat
 	   my-tools-path ";"
 	   my-java-path ";"
+	   my-ant-path ";"
 	   my-mingw-path ";"
 	   my-git-path ";"
 	   my-python-path ";"
