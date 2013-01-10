@@ -47,8 +47,12 @@
      my-dropbox-path
      "PortableGit/bin/"))
 
-  (defconst my-python-path
-    "c:/python26/")
+  (if (file-exists-p "c:/python26")
+      (defconst my-python-path "c:/python26/")
+    (defconst my-python-path 
+      (concat
+       my-dropbox-path
+       "PortablePython/App/")))
   
   (defconst my-python-script-path
     (concat
@@ -71,3 +75,5 @@
 ;; This exec-path setting will work for all the platforms
 ;; after the PATH is set.
 (setq exec-path (split-string (getenv "PATH") path-separator))
+
+(setenv "LANG" "en_US.UTF-8")
