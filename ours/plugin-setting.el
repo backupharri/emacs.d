@@ -41,8 +41,17 @@
 			  (mode . emacs-lisp-mode)
 			  (name . "^\\.emacs$")
 			  (name . "^\\*scratch\\*$")))
-               ("dired"  (mode . dired-mode))
-               ("xml"    (mode . nxml-mode))))))   
+	       ("Make"  (or
+			  (name . "Makefile")
+			  (name . "MAKEFILE")
+			  (filename . "\\.mak$")))
+	       ("bat-sh" (or
+			  (filename . "\\.bat$")
+			  (filename . "\\.sh$")))
+	       ("temp"   (or
+			  (name . "^\\*$")))
+               ("xml"    (mode . nxml-mode))
+               ("dired"  (mode . dired-mode))))))   
 
 (setq ibuffer-show-empty-filter-groups nil)
 

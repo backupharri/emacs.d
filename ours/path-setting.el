@@ -30,8 +30,13 @@
   (defconst my-java-path
     (concat
      my-dropbox-path
-     "PortableJava/bin/"))
+     "PortableJdk/bin/"))
 
+  (defconst my-ant-path
+    (concat
+     my-dropbox-path
+     "PortableAnt/bin/"))
+  
   (defconst my-mingw-path
     (concat
      my-dropbox-path
@@ -42,8 +47,12 @@
      my-dropbox-path
      "PortableGit/bin/"))
 
-  (defconst my-python-path
-    "c:/python26/")
+  (if (file-exists-p "c:/python26")
+      (defconst my-python-path "c:/python26/")
+    (defconst my-python-path 
+      (concat
+       my-dropbox-path
+       "PortablePython/App/")))
   
   (defconst my-python-script-path
     (concat
@@ -54,6 +63,7 @@
 	  (concat
 	   my-tools-path ";"
 	   my-java-path ";"
+	   my-ant-path ";"
 	   my-mingw-path ";"
 	   my-git-path ";"
 	   my-python-path ";"
@@ -65,3 +75,5 @@
 ;; This exec-path setting will work for all the platforms
 ;; after the PATH is set.
 (setq exec-path (split-string (getenv "PATH") path-separator))
+
+(setenv "LANG" "en_US.UTF-8")
