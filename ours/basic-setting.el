@@ -108,3 +108,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-mode))
 
+;; to fix :WARNING: terminal is not fully functional
+(if (string-equal system-type "windows-nt")
+    (setenv "PAGER" "cat.exe")
+  (setenv "PAGER" "cat"))
