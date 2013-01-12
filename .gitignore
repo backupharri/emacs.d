@@ -3,6 +3,7 @@
 \#*
 .\#*
 *.swp
+*.bmk
 
 # Record Files
 .recentf

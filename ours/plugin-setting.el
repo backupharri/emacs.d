@@ -5,12 +5,15 @@
 ;; tramp setting password keep time
 (setq password-cache-expiry 6000)
 
+;; usage is like this /sudo:root@host, then select the user name
 (if (string-equal system-type "windows-nt")
-    (setq tramp-default-method "plink")
-  (setq tramp-default-method "ssh"))
+    (add-to-list 'tramp-default-proxies-alist
+		 '(nil "\\`root\\'" "/plink:%h:"))
+  (add-to-list 'tramp-default-proxies-alist
+	       '(nil "\\`root\\'" "/ssh:%h:")))
 
-;;use sudo on remote host
-(set-default 'tramp-default-proxies-alist (quote ((nil "\\`root\\'" "/hfeng@%h:"))))
+(add-to-list 'tramp-default-proxies-alist
+	     '((regexp-quote (system-name)) nil nil))
 
 ;;--------recentf------------------>>
 (recentf-mode 1)
@@ -21,8 +24,12 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (setq ibuffer-saved-filter-groups
       (quote (("default"
-               ("shell"  (mode . shell-mode))
-               ("python" (mode . python-mode))
+               ("shell"  (or
+			  (mode . shell-mode)
+			  (mode . eshell-mode)))
+               ("python" (or
+			  (name . "^\\*Py")
+			  (mode . python-mode)))
                ("ruby"   (mode . ruby-mode))
                ("html"   (mode . html-mode))
 	       ("cc-c"   (or
@@ -31,10 +38,11 @@
                ("java"   (mode . java-mode))
                ("org"    (mode . org-mode))
 	       ("emacs"  (or
+			  (mode . emacs-lisp-mode)
 			  (name . "^\\.emacs$")
 			  (name . "^\\*scratch\\*$")))
                ("dired"  (mode . dired-mode))
-               ("xml"    (mode . nxml-mode))))))    
+               ("xml"    (mode . nxml-mode))))))   
 
 (setq ibuffer-show-empty-filter-groups nil)
 
@@ -69,3 +77,35 @@
 	    (setq yas/trigger-key [tab])
 	    (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
 	    (define-key yas/keymap [tab] 'yas/next-field)))
+
+(setq org-export-html-style
+      "<style type=\"text/css\"> html { font-family: Consolas; font-size: 12pt;} \
+pre{background-color:#002B36;Font:12pt Consolas, Courier New;color:wheat;}</style>")
+       
+(setq org-publish-project-alist
+      (list
+       '("htmlfiles"
+	 :base-extension "org"
+	 :publishing-function org-publish-org-to-html
+	 :headline-levels 3
+	 :with-section-numbers nil
+	 :table-of-contents nil
+	 :auto-preamble t
+	 :htmlized-source t
+	 :auto-postamble nil)
+       ))
+
+;;--------info-mode------------------>>
+(defun info-mode ()
+  (interactive)
+  (let ((file-name (buffer-file-name)))
+    (kill-buffer (current-buffer))
+    (info file-name)))
+(add-to-list 'auto-mode-alist '("\\.info\\'" . info-mode))
+
+(require 'info-look)
+
+(info-lookup-add-help
+ :mode 'python-mode
+ :regexp "[[:alnum:]_]+"
+ :doc-spec '(("(python)Index" nil "")))

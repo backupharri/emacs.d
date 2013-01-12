@@ -43,9 +43,7 @@
      "PortableGit/bin/"))
 
   (defconst my-python-path
-    (concat
-     my-dropbox-path
-     "PortablePython/App/"))
+    "c:/python26/")
   
   (defconst my-python-script-path
     (concat

@@ -1,0 +1,34 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("oneAsia-hfeng"
+ (filename . "/plink:hfeng@116.251.210.230:/home/hfeng/")
+ (front-context-string)
+ (rear-context-string . "12-12 10:43 tmp\n")
+ (position . 1556))
+("mac-lvtest02-ga-location"
+ (filename . "/sudo:root@sh-mac-lvtest02:/Volumes/Storage/Testfarm/ghostagent/")
+ (front-context-string . "GhostAgent.py\n  ")
+ (rear-context-string . "743 12-17 11:57 ")
+ (position . 405)
+ (annotation . "mac-lvtest02's ghost agent location"))
+("mac-lvtest02"
+ (filename . "/sudo:root@sh-mac-lvtest02://")
+ (front-context-string)
+ (rear-context-string . " -> private/var\n")
+ (position . 1722)
+ (annotation . "Mac test location"))
+("Ghostagent"
+ (filename . "d:/gitbox/ghostagent/GhostAgent/")
+ (front-context-string . "DailyCommand.py\n")
+ (rear-context-string . "066 12-14 16:57 ")
+ (position . 359)
+ (annotation . "Ghost Agent code"))
+(".emacs.d"
+ (filename . "~/.emacs.d/")
+ (front-context-string . ".git\n  -rw-rw-rw")
+ (rear-context-string . "  0 12-17 18:50 ")
+ (position . 279)
+ (annotation . "emacs configuration folder"))
+)
