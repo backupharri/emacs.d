@@ -5,6 +5,7 @@
 
 ;; use spaces only!
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
