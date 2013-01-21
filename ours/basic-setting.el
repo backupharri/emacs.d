@@ -109,3 +109,8 @@
 
 (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-mode))
 
+;disable backup
+(setq backup-inhibited t)
+
+;disable auto save
+(setq auto-save-default nil)

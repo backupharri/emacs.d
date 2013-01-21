@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("mac-lvtest01"
+(("lvbuild@mslinuxbuild"
+ (filename . "/plink:lvbuild@mslinuxbuild:/home/lvbuild/")
+ (front-context-string . ".ICEauthority\n  ")
+ (rear-context-string . "280 09-26 18:04 ")
+ (position . 220))
+("mac-lvtest01"
  (filename . "/sudo:root@sh-mac-lvtest01://")
  (front-context-string . ".Trashes\n  -rw-r")
  (rear-context-string . "102 01-15 16:34 ")
