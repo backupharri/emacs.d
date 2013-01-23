@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("lvbuild@mslinuxbuild"
+(("sh-linux-lvtest03"
+ (filename . "/plink:lvtest@sh-linux-lvtest03:/home/lvtest/")
+ (front-context-string . ".ICEauthority\n  ")
+ (rear-context-string . "720 01-08 20:18 ")
+ (position . 210))
+("lvbuild@mslinuxbuild"
  (filename . "/plink:lvbuild@mslinuxbuild:/home/lvbuild/")
  (front-context-string . ".ICEauthority\n  ")
  (rear-context-string . "280 09-26 18:04 ")
@@ -19,9 +24,9 @@
  (position . 278))
 ("sh-linux-lvtest01"
  (filename . "/plink:lvtest@sh-linux-lvtest01:/home/lvtest/")
- (front-context-string . ".ICEauthority\n  ")
- (rear-context-string . "014 12-25 05:22 ")
- (position . 213))
+ (front-context-string . ".nautilus\n  -rw-")
+ (rear-context-string . "096 2010-10-18  ")
+ (position . 1612))
 ("oneAsia-hfeng"
  (filename . "/plink:hfeng@116.251.210.230:/home/hfeng/")
  (front-context-string)
