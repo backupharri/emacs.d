@@ -2,16 +2,21 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("sh-linux-lvtest03"
+(("cdsimbuild@cdsimlinuxbuild"
+ (filename . "/plink:cdsimbuild@cdsimlinuxbuild:/home/cdsimbuild/")
+ (front-context-string . ".DCOPserver_cdsi")
+ (rear-context-string . " 47 2012-06-09  ")
+ (position . 232))
+("sh-linux-lvtest03"
  (filename . "/plink:lvtest@sh-linux-lvtest03:/home/lvtest/")
  (front-context-string . ".ICEauthority\n  ")
  (rear-context-string . "720 01-08 20:18 ")
  (position . 210))
 ("lvbuild@mslinuxbuild"
  (filename . "/plink:lvbuild@mslinuxbuild:/home/lvbuild/")
- (front-context-string . ".ICEauthority\n  ")
- (rear-context-string . "280 09-26 18:04 ")
- (position . 220))
+ (front-context-string . ".dbus\n  -rw-r--r")
+ (rear-context-string . "096 2010-08-11  ")
+ (position . 777))
 ("mac-lvtest01"
  (filename . "/sudo:root@sh-mac-lvtest01://")
  (front-context-string . ".Trashes\n  -rw-r")
