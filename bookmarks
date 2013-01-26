@@ -2,16 +2,36 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("updateInfo"
+(("cdsimbuild@cdsimlinuxbuild"
+ (filename . "/plink:cdsimbuild@cdsimlinuxbuild:/home/cdsimbuild/")
+ (front-context-string . ".DCOPserver_cdsi")
+ (rear-context-string . " 47 2012-06-09  ")
+ (position . 232))
+("sh-linux-lvtest03"
+ (filename . "/plink:lvtest@sh-linux-lvtest03:/home/lvtest/")
+ (front-context-string . ".ICEauthority\n  ")
+ (rear-context-string . "720 01-08 20:18 ")
+ (position . 210))
+("lvbuild@mslinuxbuild"
+ (filename . "/plink:lvbuild@mslinuxbuild:/home/lvbuild/")
+ (front-context-string . ".dbus\n  -rw-r--r")
+ (rear-context-string . "096 2010-08-11  ")
+ (position . 777))
+("mac-lvtest01"
+ (filename . "/sudo:root@sh-mac-lvtest01://")
+ (front-context-string . ".Trashes\n  -rw-r")
+ (rear-context-string . "102 01-15 16:34 ")
+ (position . 318))
+("updateInfo"
  (filename . "d:/Dropbox/Documents/Code/updateInfo/")
  (front-context-string . ".git\n  -rw-rw-rw")
  (rear-context-string . "  0 01-04 17:13 ")
  (position . 278))
 ("sh-linux-lvtest01"
  (filename . "/plink:lvtest@sh-linux-lvtest01:/home/lvtest/")
- (front-context-string . ".ICEauthority\n  ")
- (rear-context-string . "014 12-25 05:22 ")
- (position . 213))
+ (front-context-string . ".nautilus\n  -rw-")
+ (rear-context-string . "096 2010-10-18  ")
+ (position . 1612))
 ("oneAsia-hfeng"
  (filename . "/plink:hfeng@116.251.210.230:/home/hfeng/")
  (front-context-string)
