@@ -4,6 +4,10 @@
 
 (require 'htmlize)
 (require 'browse-kill-ring)
+(require 'highlight)
+(require 'compile-)
+(require 'compile+)
+(require 'grep+)
 
 ;; bat-mode setting
 (setq auto-mode-alist 
