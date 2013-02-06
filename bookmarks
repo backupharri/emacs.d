@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("cdsimbuild@cdsimlinuxbuild"
+(("lvtest@vm-linux:10.144.9.132"
+ (filename . "/plink:lvtest@10.144.9.132:/home/lvtest/")
+ (front-context-string . ".ICEauthority\n  ")
+ (rear-context-string . "930 2013-02-26  ")
+ (position . 202))
+("cdsimbuild@cdsimlinuxbuild"
  (filename . "/plink:cdsimbuild@cdsimlinuxbuild:/home/cdsimbuild/")
  (front-context-string . ".DCOPserver_cdsi")
  (rear-context-string . " 47 2012-06-09  ")
