@@ -25,31 +25,31 @@
 (setq ibuffer-saved-filter-groups
       (quote (("default"
                ("shell"  (or
-			  (mode . shell-mode)
-			  (mode . eshell-mode)))
+                          (mode . shell-mode)
+                          (mode . eshell-mode)))
                ("python" (or
-			  (name . "^\\*Py")
-			  (mode . python-mode)))
+                          (name . "^\\*Py")
+                          (mode . python-mode)))
                ("ruby"   (mode . ruby-mode))
                ("html"   (mode . html-mode))
-	       ("cc-c"   (or
-			  (mode . c-mode)
-			  (mode . c++-mode)))
+               ("cc-c"   (or
+                          (mode . c-mode)
+                          (mode . c++-mode)))
                ("java"   (mode . java-mode))
                ("org"    (mode . org-mode))
-	       ("emacs"  (or
-			  (mode . emacs-lisp-mode)
-			  (name . "^\\.emacs$")
-			  (name . "^\\*scratch\\*$")))
-	       ("Make"  (or
-			  (name . "Makefile")
-			  (name . "MAKEFILE")
-			  (filename . "\\.mak$")))
-	       ("bat-sh" (or
-			  (filename . "\\.bat$")
-			  (filename . "\\.sh$")))
-	       ("temp"   (or
-			  (name . "^\\*$")))
+               ("emacs"  (or
+                          (mode . emacs-lisp-mode)
+                          (name . "^\\.emacs$")
+                          (name . "^\\*scratch\\*$")))
+               ("Make"  (or
+                         (name . "Makefile")
+                         (name . "MAKEFILE")
+                         (filename . "\\.mak$")))
+               ("bat-sh" (or
+                          (filename . "\\.bat$")
+                          (filename . "\\.sh$")))
+               ("temp"   (or
+                          (name . "^\\*$")))
                ("xml"    (mode . nxml-mode))
                ("dired"  (mode . dired-mode))))))   
 
