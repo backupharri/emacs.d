@@ -5,9 +5,10 @@
 ;;--------python----------->
 (require 'python)
 (setq
- python-shell-interpreter "C:\\Python26\\python.exe"
- python-shell-interpreter-args
- "-i C:\\Python26\\Scripts\\ipython-script.py"
+ python-shell-interpreter "python.exe"
+ python-shell-interpreter-args (concat "-i " (concat my-python-script-path
+                                                     "ipython-script.py"))
+; "-i C:\\Python26\\Scripts\\ipython-script.py"
  python-shell-prompt-regexp "In \\[[0-9]+\\]: "
  python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
  python-shell-completion-setup-code

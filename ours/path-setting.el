@@ -47,17 +47,17 @@
      my-dropbox-path
      "PortableGit/bin/"))
 
-  (if (file-exists-p "c:/python26")
-      (defconst my-python-path "c:/python26/")
+  (if (file-exists-p "c:/CommonFiles/python26")
+      (defconst my-python-path "c:/CommonFiles/python26/")
     (defconst my-python-path 
       (concat
        my-dropbox-path
-       "PortablePython/App/")))
+       "Python26/")))
   
   (defconst my-python-script-path
     (concat
      my-python-path
-     "Scripts"))
+     "Scripts/"))
   
   (setenv "PATH"
 	  (concat
