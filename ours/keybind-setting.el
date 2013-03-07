@@ -19,6 +19,8 @@
 
 ;;mac only
 (global-set-key (kbd "<f8>")         'ns-toggle-fullscreen)
+;;toggle line number
+(global-set-key (kbd "<f9>")         'linum-mode)
 
 
 ; Outline-minor-mode key map
