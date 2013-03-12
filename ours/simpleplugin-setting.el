@@ -16,3 +16,11 @@
 
 (autoload 'bat-mode "bat-mode"
   "DOS and WIndows BAT files" t)
+
+;; session setting
+(require 'session)
+(add-hook 'after-init-hook
+          'session-initialize)
+;; org-mode & session.el conflict
+(add-to-list 'session-globals-exclude
+             'org-mark-ring)
