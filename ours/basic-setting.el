@@ -133,3 +133,9 @@
 (setq compilation-window-height 12)
 (setq grep-window-height 12)
 
+;; Emacs Speaks SMTP (gnu.org) using the default mail agent ;; If you use the default mail user agent.
+(setq send-mail-function 'smtpmail-send-it)
+;; Send mail using SMTP via gmail.
+(setq smtpmail-smtp-server "smtp.gmail.com")
+;; Send mail using SMTP on the mail submission port 587.
+(setq smtpmail-smtp-service 587)

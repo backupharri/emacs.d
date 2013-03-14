@@ -27,6 +27,11 @@
      my-dropbox-path
      "Tools/"))
 
+  (defconst my-gnutls-path
+    (concat
+     my-tools-path
+     "GnuTLS/bin/"))
+  
   (defconst my-java-path
     (concat
      my-dropbox-path
@@ -62,6 +67,7 @@
   (setenv "PATH"
 	  (concat
 	   my-tools-path ";"
+	   my-gnutls-path ";"
 	   my-java-path ";"
 	   my-ant-path ";"
 	   my-mingw-path ";"
