@@ -27,6 +27,11 @@
      my-dropbox-path
      "Tools/"))
 
+  (defconst my-gnutls-path
+    (concat
+     my-tools-path
+     "GnuTLS/bin/"))
+  
   (defconst my-java-path
     (concat
      my-dropbox-path
@@ -52,16 +57,17 @@
     (defconst my-python-path 
       (concat
        my-dropbox-path
-       "PortablePython/App/")))
+       "Python26/")))
   
   (defconst my-python-script-path
     (concat
      my-python-path
-     "Scripts"))
+     "Scripts/"))
   
   (setenv "PATH"
 	  (concat
 	   my-tools-path ";"
+	   my-gnutls-path ";"
 	   my-java-path ";"
 	   my-ant-path ";"
 	   my-mingw-path ";"

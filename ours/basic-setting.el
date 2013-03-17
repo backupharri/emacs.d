@@ -135,7 +135,13 @@
 (setq auto-save-default nil)
 
 ;; different buffer name for name
-(setq frame-title-format '("%f"))
+(setq frame-title-format "%b @ %f")
+
+(require 'uniquify)
+
+(setq uniquify-buffer-name-style 'post-forward)
+(setq uniquify-separator ":")
+
 
 ;; always new find windows on horizontally
 (setq split-width-threshold nil)
@@ -143,3 +149,10 @@
 ;; it will also affect the grep-windows-height
 (setq compilation-window-height 12)
 (setq grep-window-height 12)
+
+;; Emacs Speaks SMTP (gnu.org) using the default mail agent ;; If you use the default mail user agent.
+(setq send-mail-function 'smtpmail-send-it)
+;; Send mail using SMTP via gmail.
+(setq smtpmail-smtp-server "smtp.gmail.com")
+;; Send mail using SMTP on the mail submission port 587.
+(setq smtpmail-smtp-service 587)
