@@ -6,12 +6,13 @@
 (when (string-equal system-type (or "darwin" "gnu/linux"))
   (setenv "PATH"
 	  (concat
-	   "/usr/local/bin" ":"
-	   "/bin"           ":"
-	   "/sbin"          ":"
-	   "/usr"           ":"
-	   "/usr/bin"       ":"
-	   "/usr/sbin"      ":"
+	   "/usr/local/bin"          ":"
+	   "/bin"                    ":"
+	   "/sbin"                   ":"
+	   "/usr"                    ":"
+	   "/usr/bin"                ":"
+	   "/usr/sbin"               ":"
+       "/usr/local/share/python" ":"
 	   (getenv "PATH")
 	   ))
   )
