@@ -50,7 +50,7 @@
  (rear-context-string . "096 2010-10-18  ")
  (position . 1612))
 ("oneAsia-hfeng"
- (filename . "/plink:hfeng@116.251.210.230:/home/hfeng/")
+ (filename . "/ssh:hfeng@116.251.210.230:/home/hfeng/")
  (front-context-string)
  (rear-context-string . "12-12 10:43 tmp\n")
  (position . 1556))

@@ -3,6 +3,9 @@
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")
 
+;;used only in Unix-like OS
+(setq explicit-shell-file-name "/bin/bash")
+
 ;; use spaces only!
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
