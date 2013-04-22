@@ -65,7 +65,11 @@
 ;; have to set '#+OPTIONS:^:{}' at the beginning
 ;; of the org file, With this setting, 'a_b' will
 ;; not be interpreted as a subscript, but 'a_{b}' will.
-(setq org-export-with-sub-superscripts nil)
+;; (setq org-export-with-sub-superscripts nil)
+
+;; (steq org-use-sub-superscripts nil)
+(custom-set-variables
+ '(org-use-sub-superscripts nil))
 
 ;; When you have made some personal keyboard shortcuts in
 ;; emacs using global-set-key, both major modes and minor
@@ -118,3 +122,4 @@ pre{background-color:#002B36;Font:12pt Consolas, Courier New;color:wheat;}</styl
  :mode 'python-mode
  :regexp "[[:alnum:]_]+"
  :doc-spec '(("(python)Index" nil "")))
+

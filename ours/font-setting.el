@@ -9,9 +9,9 @@
 			 ":pixelsize=14")
 			((string-match system-name "sh-rd-hfeng")
 			 ":pixelsize=14")
-			(":pixelsize=16")))
+			(":pixelsize=12")))
 
 (qiang-set-font
- '("Monaco" "Consolas" "Courier" "DejaVu Sans Mono" "Monospace" "Courier New") my-font-size
+ '("Consolas" "Courier" "DejaVu Sans Mono" "Monospace" "Courier New") my-font-size
  '("楷体" "kai" "Microsoft Yahei" "文泉驿等宽微米黑" "黑体" "新宋体" ))
 
