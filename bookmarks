@@ -12,34 +12,29 @@
  (front-context-string . ".ssh\n  -rw------")
  (rear-context-string . "96 Apr 16 14:28 ")
  (position . 1878))
-("sh-linux-hfeng"
- (filename . "/plink:hfeng@10.144.10.210:/home/hfeng/")
- (front-context-string . ".ICEauthority\n  ")
- (rear-context-string . "930 03-26 17:22 ")
- (position . 195))
 ("sh-linux-lvtest02"
- (filename . "/plink:lvtest@sh-linux-lvtest02:/home/lvtest/")
+ (filename . "/ssh:lvtest@sh-linux-lvtest02:/home/lvtest/")
  (front-context-string . ".ICEauthority\n  ")
  (rear-context-string . "824 02-25 14:52 ")
  (position . 207))
 ("lvtest@vm-linux:10.144.9.132"
- (filename . "/plink:lvtest@10.144.9.132:/home/lvtest/")
+ (filename . "/ssh:lvtest@10.144.9.132:/home/lvtest/")
  (front-context-string . ".ICEauthority\n  ")
  (rear-context-string . "930 2013-02-26  ")
  (position . 202))
 ("cdsimbuild@cdsimlinuxbuild"
- (filename . "/plink:cdsimbuild@cdsimlinuxbuild:/home/cdsimbuild/")
+ (filename . "/ssh:cdsimbuild@cdsimlinuxbuild:/home/cdsimbuild/")
  (front-context-string . ".DCOPserver_cdsi")
  (rear-context-string . " 47 2012-06-09  ")
  (position . 232)
  (annotation . "labview==="))
 ("sh-linux-lvtest03"
- (filename . "/plink:lvtest@sh-linux-lvtest03:/home/lvtest/")
+ (filename . "/ssh:lvtest@sh-linux-lvtest03:/home/lvtest/")
  (front-context-string . ".ICEauthority\n  ")
  (rear-context-string . "720 01-08 20:18 ")
  (position . 210))
 ("lvbuild@mslinuxbuild"
- (filename . "/plink:lvbuild@mslinuxbuild:/home/lvbuild/")
+ (filename . "/ssh:lvbuild@mslinuxbuild:/home/lvbuild/")
  (front-context-string . ".dbus\n  -rw-r--r")
  (rear-context-string . "096 2010-08-11  ")
  (position . 777)
@@ -55,7 +50,7 @@
  (rear-context-string . "  0 01-04 17:13 ")
  (position . 278))
 ("sh-linux-lvtest01"
- (filename . "/plink:lvtest@sh-linux-lvtest01:/home/lvtest/")
+ (filename . "/ssh:lvtest@sh-linux-lvtest01:/home/lvtest/")
  (front-context-string . ".nautilus\n  -rw-")
  (rear-context-string . "096 2010-10-18  ")
  (position . 1612))
@@ -76,12 +71,6 @@
  (rear-context-string . " -> private/var\n")
  (position . 1722)
  (annotation . "Mac test location"))
-("Ghostagent"
- (filename . "d:/gitbox/ghostagent/GhostAgent/")
- (front-context-string . "DailyCommand.py\n")
- (rear-context-string . "066 12-14 16:57 ")
- (position . 359)
- (annotation . "Ghost Agent code"))
 (".emacs.d"
  (filename . "~/.emacs.d/")
  (front-context-string . ".git\n  -rw-rw-rw")

@@ -24,3 +24,11 @@
 ;; org-mode & session.el conflict
 (add-to-list 'session-globals-exclude
              'org-mark-ring)
+
+(require 'bm)
+
+(setq bm-highlight-style 'bm-highlight-only-line)
+
+(global-set-key (kbd "C-m") 'bm-toggle)
+(global-set-key (kbd "<f12>") 'bm-next)
+(global-set-key (kbd "<C-f12>") 'bm-previous)
