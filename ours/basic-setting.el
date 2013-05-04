@@ -159,3 +159,6 @@
 (setq smtpmail-smtp-server "smtp.gmail.com")
 ;; Send mail using SMTP on the mail submission port 587.
 (setq smtpmail-smtp-service 587)
+
+
+(autoload 'douban-music "douban-music-mode" nil t)

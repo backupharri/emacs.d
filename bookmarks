@@ -45,7 +45,7 @@
  (rear-context-string . "  0 01-04 17:13 ")
  (position . 278))
 ("sh-linux-lvtest01"
- (filename . "/plink:lvtest@sh-linux-lvtest01:/home/lvtest/")
+ (filename . "/ssh:lvtest@sh-linux-lvtest01:/home/lvtest/")
  (front-context-string . ".nautilus\n  -rw-")
  (rear-context-string . "096 2010-10-18  ")
  (position . 1612))

@@ -22,6 +22,9 @@ eshell
 *.elc
 *.db
 
+# Douban Music
+DouBanMusic/
+
 # Other Files
 .emacs
 .emacs.d
