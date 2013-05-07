@@ -161,3 +161,7 @@
 (setq smtpmail-smtp-service 587)
 
 (put 'upcase-region 'disabled nil)
+
+(autoload 'douban-music "douban-music-mode" nil t)
+
+(setq nxml-child-indent 4)

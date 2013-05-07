@@ -13,6 +13,7 @@
 	   "/usr/bin"                ":"
 	   "/usr/sbin"               ":"
        "/usr/local/share/python" ":"
+       "/usr/texbin"            ":"  ;;xelatex
 	   (getenv "PATH")
 	   ))
   )
