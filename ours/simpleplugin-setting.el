@@ -29,6 +29,6 @@
 
 (setq bm-highlight-style 'bm-highlight-only-line)
 
-(global-set-key (kbd "C-m") 'bm-toggle)
+(global-set-key (kbd "<C-return>") 'bm-toggle)
 (global-set-key (kbd "<f12>") 'bm-next)
 (global-set-key (kbd "<C-f12>") 'bm-previous)
