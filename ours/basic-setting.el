@@ -16,9 +16,9 @@
 (customize-set-variable 'scroll-bar-mode nil)
 
 (tool-bar-mode -1)
-(if (string-equal system-type "windows-nt")
-    (menu-bar-mode -1)
-  (menu-bar-mode t))
+(if (string-equal system-type "darwin")
+    (menu-bar-mode t)
+  (menu-bar-mode -1))
 
 (setq ring-bell-function 'ignore)
 (blink-cursor-mode -1)
