@@ -21,5 +21,5 @@
      python-shell-interpreter-args
      "-i C:\\Python26\\Scripts\\ipython-script.py")
   (setq
-   python-shell-interpreter "/usr/local/share/python/ipython"
+   python-shell-interpreter "ipython"
    python-shell-interpreter-args ""))

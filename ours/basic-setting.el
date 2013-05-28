@@ -160,8 +160,9 @@
 ;; Send mail using SMTP on the mail submission port 587.
 (setq smtpmail-smtp-service 587)
 
-(put 'upcase-region 'disabled nil)
 
 (autoload 'douban-music "douban-music-mode" nil t)
 
 (setq nxml-child-indent 4)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
