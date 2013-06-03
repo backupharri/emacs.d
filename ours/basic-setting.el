@@ -141,3 +141,5 @@
 (setq smtpmail-smtp-service 587)
 
 (put 'downcase-region 'disabled nil)
+
+(setq nxml-child-indent 4)
