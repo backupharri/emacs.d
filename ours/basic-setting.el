@@ -73,16 +73,16 @@
 	;senator-try-expand-semantic ; too slow
 	try-expand-line ;whole line first
 	try-expand-line-all-buffers
-	try-expand-list 
+	try-expand-list
 	try-expand-list-all-buffers
-	try-expand-dabbrev 
-	try-expand-dabbrev-visible 
-	try-expand-dabbrev-all-buffers 
-	try-expand-dabbrev-from-kill 
-	try-complete-file-name 
-	try-complete-file-name-partially 
-	try-complete-lisp-symbol 
-	try-complete-lisp-symbol-partially 
+	try-expand-dabbrev
+	try-expand-dabbrev-visible
+	try-expand-dabbrev-all-buffers
+	try-expand-dabbrev-from-kill
+	try-complete-file-name
+	try-complete-file-name-partially
+	try-complete-lisp-symbol
+	try-complete-lisp-symbol-partially
 	try-expand-whole-kill
 	)
       )
@@ -141,5 +141,6 @@
 (setq smtpmail-smtp-service 587)
 
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
 
 (setq nxml-child-indent 4)

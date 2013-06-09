@@ -32,21 +32,6 @@
      my-tools-path
      "GnuTLS/bin/"))
 
-  (defconst my-java-path
-    (concat
-     my-dropbox-path
-     "PortableJdk/bin/"))
-
-  (defconst my-ant-path
-    (concat
-     my-dropbox-path
-     "PortableAnt/bin/"))
-
-  (defconst my-mingw-path
-    (concat
-     my-dropbox-path
-     "PortableMingw/bin/"))
-
   (defconst my-git-path
     (concat
      my-dropbox-path
@@ -70,12 +55,8 @@
 
   (setenv "PATH"
 	  (concat
-       my-cygwin-path ";"
 	   my-tools-path ";"
 	   my-gnutls-path ";"
-	   my-java-path ";"
-	   my-ant-path ";"
-	   ;; my-mingw-path ";"
 	   my-git-path ";"
 	   my-python-path ";"
 	   my-python-script-path ";"
