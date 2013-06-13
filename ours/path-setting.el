@@ -27,10 +27,20 @@
      my-dropbox-path
      "Tools/"))
 
-  (defconst my-gnutls-path
+  (defconst my-mingw-get-path
     (concat
-     my-tools-path
-     "GnuTLS/bin/"))
+     my-dropbox-path
+     "mingw-get/"))
+
+  (defconst my-msys-path
+    (concat
+     my-mingw-get-path
+     "msys/1.0/bin/"))
+
+  (defconst my-mingw-path
+    (concat
+     my-mingw-get-path
+     "bin/"))
 
   (defconst my-git-path
     (concat
@@ -56,7 +66,8 @@
   (setenv "PATH"
 	  (concat
 	   my-tools-path ";"
-	   my-gnutls-path ";"
+	   my-mingw-path ";"
+	   my-msys-path ";"
 	   my-git-path ";"
 	   my-python-path ";"
 	   my-python-script-path ";"
