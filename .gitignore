@@ -23,3 +23,6 @@ eshell
 # Other Files
 .emacs
 .emacs.d
+
+# Archive Files
+archive-contents

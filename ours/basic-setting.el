@@ -101,3 +101,10 @@
 ;;faster compile & accurate warning.
 (setq byte-compile-verbose nil)
 (setq font-lock-verbose t)
+
+;;packages server:marmalade
+(require 'package)
+(add-to-list 'package-archives
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
