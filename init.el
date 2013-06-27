@@ -18,3 +18,7 @@
 (require 'snippet-setting)
 (require 'simpleplugin-setting)
 (require 'cc-setting)
+(require 'ac-setting)
+
+
+
