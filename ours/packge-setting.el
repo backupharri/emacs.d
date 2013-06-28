@@ -1,7 +1,13 @@
-(provide 'simpleplugin-setting)
+(provide 'package-setting)
 
-(add-to-list 'load-path (concat their-lisps-path "simpleplugin/"))
+;;packages server:marmalade
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" .
+               "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
+;; Simple Plugins that are installed in package Marmalade are list here
 (require 'htmlize)
 (require 'browse-kill-ring)
 

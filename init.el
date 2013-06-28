@@ -16,7 +16,7 @@
 (require 'colortheme-setting)
 (require 'python-setting)
 (require 'snippet-setting)
-(require 'simpleplugin-setting)
+(require 'package-setting)
 (require 'cc-setting)
 (require 'ac-setting)
 
