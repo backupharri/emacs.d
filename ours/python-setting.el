@@ -18,3 +18,6 @@
  python-shell-completion-string-code
  "';'.join(get_ipython().Completer.all_completions('''%s'''))\n")
 
+;;--------jedi plugin----------->
+(add-hook 'python-mode-hook 'jedi:ac-setup)
+(setq jedi:setup-keys t)
