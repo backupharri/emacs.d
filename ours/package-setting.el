@@ -38,3 +38,7 @@
 (global-set-key (kbd "<C-return>") 'bm-toggle)
 (global-set-key (kbd "<f12>") 'bm-next)
 (global-set-key (kbd "<C-f12>") 'bm-previous)
+
+;;grep-a-lot
+(require 'grep-a-lot)
+(grep-a-lot-setup-keys)
