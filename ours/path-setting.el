@@ -6,13 +6,12 @@
 (when (string-equal system-type (or "darwin" "gnu/linux"))
   (setenv "PATH"
 	  (concat
-	   "/usr/local/bin"          ":"
-	   "/bin"                    ":"
-	   "/sbin"                   ":"
-	   "/usr"                    ":"
-	   "/usr/bin"                ":"
-	   "/usr/sbin"               ":"
-       "/usr/local/share/python" ":"
+	   "/bin"           ":"
+	   "/sbin"          ":"
+	   "/usr"           ":"
+	   "/usr/bin"       ":"
+	   "/usr/local/bin" ":"
+	   "/usr/sbin"      ":"
 	   (getenv "PATH")
 	   ))
   )
@@ -22,32 +21,27 @@
   (if (file-exists-p "c:/dropbox")
       (defconst my-dropbox-path "c:/Dropbox/Development/")
     (defconst my-dropbox-path "d:/Dropbox/Development/"))
-  
+
   (defconst my-tools-path
     (concat
      my-dropbox-path
      "Tools/"))
 
-  (defconst my-gnutls-path
-    (concat
-     my-tools-path
-     "GnuTLS/bin/"))
-  
-  (defconst my-java-path
+  (defconst my-mingw-get-path
     (concat
      my-dropbox-path
-     "PortableJdk/bin/"))
+     "mingw-get/"))
 
-  (defconst my-ant-path
+  (defconst my-msys-path
     (concat
-     my-dropbox-path
-     "PortableAnt/bin/"))
-  
+     my-mingw-get-path
+     "msys/1.0/bin/"))
+
   (defconst my-mingw-path
     (concat
-     my-dropbox-path
-     "PortableMingw/bin/"))  
-  
+     my-mingw-get-path
+     "bin/"))
+
   (defconst my-git-path
     (concat
      my-dropbox-path
@@ -55,23 +49,25 @@
 
   (if (file-exists-p "c:/python26")
       (defconst my-python-path "c:/python26/")
-    (defconst my-python-path 
+    (defconst my-python-path
       (concat
        my-dropbox-path
        "Python26/")))
-  
+
   (defconst my-python-script-path
     (concat
      my-python-path
      "Scripts/"))
-  
+
+  (if (file-exists-p "c:/cygwin/bin")
+      (defconst my-cygwin-path "c:/cygwin/bin")
+    (defconst my-cygwin-path "D:/cygwin/bin"))
+
   (setenv "PATH"
 	  (concat
 	   my-tools-path ";"
-	   my-gnutls-path ";"
-	   my-java-path ";"
-	   my-ant-path ";"
 	   my-mingw-path ";"
+	   my-msys-path ";"
 	   my-git-path ";"
 	   my-python-path ";"
 	   my-python-script-path ";"

@@ -67,35 +67,22 @@
 (prefer-coding-system 'utf-16)
 (prefer-coding-system 'utf-8-unix)
 
-;;UTF-8 Setting
-(set-language-environment 'Chinese-GB)
-(setq-default pathname-coding-system 'euc-cn)
-(setq file-name-coding-system 'euc-cn)
-
-;;Encoding setting
-(prefer-coding-system 'cp950)
-(prefer-coding-system 'gb2312)
-(prefer-coding-system 'cp936)
-(prefer-coding-system 'gb18030)
-(prefer-coding-system 'utf-16)
-(prefer-coding-system 'utf-8)
-
 ;;auto expand
 (setq hippie-expand-try-functions-list
       '(
 	;senator-try-expand-semantic ; too slow
 	try-expand-line ;whole line first
 	try-expand-line-all-buffers
-	try-expand-list 
+	try-expand-list
 	try-expand-list-all-buffers
-	try-expand-dabbrev 
-	try-expand-dabbrev-visible 
-	try-expand-dabbrev-all-buffers 
-	try-expand-dabbrev-from-kill 
-	try-complete-file-name 
-	try-complete-file-name-partially 
-	try-complete-lisp-symbol 
-	try-complete-lisp-symbol-partially 
+	try-expand-dabbrev
+	try-expand-dabbrev-visible
+	try-expand-dabbrev-all-buffers
+	try-expand-dabbrev-from-kill
+	try-complete-file-name
+	try-complete-file-name-partially
+	try-complete-lisp-symbol
+	try-complete-lisp-symbol-partially
 	try-expand-whole-kill
 	)
       )
@@ -124,10 +111,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-mode))
 
-;; to fix :WARNING: terminal is not fully functional
-(if (string-equal system-type "windows-nt")
-    (setenv "PAGER" "cat.exe")
-  (setenv "PAGER" "cat"))
 ;disable backup
 (setq backup-inhibited t)
 
@@ -156,3 +139,8 @@
 (setq smtpmail-smtp-server "smtp.gmail.com")
 ;; Send mail using SMTP on the mail submission port 587.
 (setq smtpmail-smtp-service 587)
+
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+
+(setq nxml-child-indent 4)

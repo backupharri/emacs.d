@@ -1,0 +1,3 @@
+#name : (copyright string)
+# --
+Copyright (c) `(substring (current-time-string) -4)` HarriFeng

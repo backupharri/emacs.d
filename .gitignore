@@ -25,3 +25,9 @@ eshell
 # Other Files
 .emacs
 .emacs.d
+
+# Data Files
+*.dat
+
+# Package Archive Files
+archives

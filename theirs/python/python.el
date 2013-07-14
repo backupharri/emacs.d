@@ -2797,7 +2797,7 @@ The skeleton will be bound to python-skeleton-NAME."
 ;;; Code check
 
 (defcustom python-check-command
-  "pyflakes"
+  "flake8"
   "Command used to check a Python file."
   :type 'string
   :group 'python)

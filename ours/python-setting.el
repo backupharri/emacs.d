@@ -23,3 +23,6 @@
   (setq
    python-shell-interpreter "/usr/local/share/python/ipython"
    python-shell-interpreter-args ""))
+;;jedi setting
+(add-hook 'python-mode-hook 'jedi:ac-setup)
+(setq jedi:setup-keys t)
