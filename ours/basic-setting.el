@@ -118,12 +118,12 @@
 (setq auto-save-default nil)
 
 ;; different buffer name for name
-(setq frame-title-format "%b @ %f")
+;; (setq frame-title-format "%b @ %f")
 
 (require 'uniquify)
 
 (setq uniquify-buffer-name-style 'post-forward)
-(setq uniquify-separator ":")
+(setq uniquify-separator "|@|")
 
 
 ;; always new find windows on horizontally
