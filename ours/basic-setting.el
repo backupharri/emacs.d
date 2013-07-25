@@ -125,6 +125,9 @@
 (setq uniquify-buffer-name-style 'post-forward)
 (setq uniquify-separator "|@|")
 
+(iswitchb-mode 1)
+(setq iswitchb-buffer-ignore '("^ " "*Completions*" "*Messages*"))
+
 
 ;; always new find windows on horizontally
 (setq split-width-threshold nil)
